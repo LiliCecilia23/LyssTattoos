@@ -34,6 +34,21 @@ body {
   width: 100%;
   padding-top: 10px !important;
   padding-left: 10px !important;
+  display: flex;
+  flex-direction: row;
+  position: sticky; 
+  top: 0;
+}
+
+.navLinks {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.navLink {
+  margin-right: 20px;
 }
 
 .logo {

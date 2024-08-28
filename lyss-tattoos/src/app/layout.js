@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Image from 'next/image'
+import Link from 'next/link'
 import "./globals.css";
 import Logo from "../../public/LyssLogo.png";
 const inter = Inter({ subsets: ["latin"] });
@@ -16,6 +17,19 @@ export default function RootLayout({ children }) {
         <div className="nav">
           <div>
             <Image className="logo" src={ Logo }></Image>
+          </div>
+          <div style={{width: "100%"}}>
+            <ul className="navLinks">
+              <li className="navLink">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="navLink">
+                <Link href="/about">About Us</Link>
+              </li>
+              <li className="navLink">
+                <Link href="/blog/hello-world">Blog Post</Link>
+              </li>
+            </ul>
           </div>
         </div>  
         <main>{children}</main>
