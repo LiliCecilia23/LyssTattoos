@@ -1,9 +1,22 @@
-import { Inter } from "next/font/google";
+import { Inter, Mansalva, Noto_Sans } from "next/font/google";
+import {NextUIProvider} from "@nextui-org/react";
 import Image from 'next/image'
 import Link from 'next/link'
 import "./globals.css";
 import Logo from "../../public/LyssLogo.png";
 const inter = Inter({ subsets: ["latin"] });
+
+const mansalva = Mansalva({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-mansalva',
+  weight: ['400']
+});
+
+const noto = Noto_Sans({
+  variable: '--font-noto-sans',
+  subsets: ['latin']
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -13,26 +26,37 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${noto.variable} ${mansalva.variable}`}>
         <div className="nav">
           <div>
             <Image className="logo" src={ Logo }></Image>
           </div>
-          <div style={{width: "100%"}}>
+          <div   style={{width: "100%"}}>
             <ul className="navLinks">
               <li className="navLink">
                 <Link href="/">Home</Link>
               </li>
               <li className="navLink">
-                <Link href="/about">About Us</Link>
+                <Link href="/about">About Lyss</Link>
               </li>
               <li className="navLink">
-                <Link href="/blog/hello-world">Blog Post</Link>
+                <Link href="/faq">FAQ</Link>
+              </li>
+              <li className="navLink">
+                <Link href="/contact">Contact</Link>
+              </li>
+              <li className="navLink">
+                <Link href="/booking">Booking</Link>
+              </li>
+              <li className="navLink">
+                <Link href="/flash">Flash</Link>
               </li>
             </ul>
           </div>
         </div>  
-        <main>{children}</main>
+        <NextUIProvider>
+          <main>{children}</main>
+        </NextUIProvider>
       </body>
     </html>
   );
