@@ -17,7 +17,7 @@ export default function Page() {
           <AccordionItem key="3" aria-label="Accordion 3" title="Is it painful to get a tattoo?">
             Pain tolerance varies among individuals, but most people experience some level of discomfort during tattooing. However, I use techniques to minimize discomfort, and many clients find the pain manageable.
           </AccordionItem>
-          <AccordionItem key="3" aria-label="Accordion 3" title="How long does it take for a tattoo to heal?">
+          <AccordionItem key="4" aria-label="Accordion 4" title="How long does it take for a tattoo to heal?">
             Healing time varies depending on factors such as tattoo size, location, and individual healing ability. Generally, it takes about 2-3 weeks for a tattoo to fully heal, during which proper aftercare is crucial.
           </AccordionItem>
         </Accordion>
