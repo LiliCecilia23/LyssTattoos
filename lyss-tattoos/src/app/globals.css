@@ -83,7 +83,11 @@ h1 {
 }
 
 .greenBg {
-  background-color: #354037;
+  background-color: #354037 !important;
+}
+
+input {
+  background-color: #354037 !important;
 }
 
 .text-foreground {
