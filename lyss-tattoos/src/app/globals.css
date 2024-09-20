@@ -29,6 +29,14 @@ body {
   }
 }
 
+.noto {
+  font-family: var(--font-noto)
+}
+
+.mansalva {
+  font-family: var(--font-mansalva);
+}
+
 .instagram-user-root-container {
   display: none;
 }
@@ -90,6 +98,87 @@ input {
   background-color: #354037 !important;
 }
 
+button[type="submit"] {
+  background-color: #C6444F !important;
+  color: antiquewhite !important;
+  float: right;
+}
+
 .text-foreground {
   color: antiquewhite;
+}
+
+.form {
+  background-color: #354037;
+  color: antiquewhite !important;
+}
+
+.form:hover {
+  background-color: #354037 !important;
+  color: antiquewhite !important;
+}
+
+.form:focus-visible {
+  background-color: #354037 !important;
+  color: antiquewhite !important;
+}
+
+.bg-primary-50 {
+  background-color: #354037 !important;
+  color: antiquewhite !important;
+}
+
+.text-foreground-500 {
+  color: antiquewhite !important;
+}
+
+section > div.group {
+  margin-bottom: 20px !important;
+}
+
+section {
+  float: left;
+  width: 50%;
+}
+
+#section2 {
+  margin-left: 40px;
+}
+
+.p-24 {
+  padding: 3rem !important;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    width: 100%;
+  }
+
+  #section2 {
+    margin-left: 0px;
+  }
+
+  #spacer1 {
+    height: 40px !important;
+  }
+
+  #spacer2 {
+    height: 20px !important;
+  }
+  form {
+    flex-direction: column !important;
+  }
+
+  #contactDiv {
+    width: 90% !important;
+    padding: 10px !important;
+  }
+
+  #contactDiv iframe {
+    height: 150px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 }

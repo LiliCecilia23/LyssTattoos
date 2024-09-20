@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import "./globals.css";
 import Logo from "../../public/LyssLogo.png";
+import Nav from "../components/nav.js";
 const inter = Inter({ subsets: ["latin"] });
 
 const mansalva = Mansalva({
@@ -27,7 +28,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${noto.variable} ${mansalva.variable}`}>
-        <div className="nav">
+        <Nav></Nav>
+        {/* <div className="nav">
           <div>
             <Image className="logo" src={ Logo }></Image>
           </div>
@@ -53,7 +55,7 @@ export default function RootLayout({ children }) {
               </li>
             </ul>
           </div>
-        </div>  
+        </div>   */}
         <NextUIProvider>
           <main>{children}</main>
         </NextUIProvider>

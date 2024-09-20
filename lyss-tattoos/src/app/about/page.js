@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <div className="greenBg" style={{height: "90%", width: "90%", margin: "auto", marginTop: "-30px", padding: "30px", textAlign: "center"}}>
+        <h1 style={{marginTop: "-25px"}}>About Me</h1>
+        <div className="greenBg" style={{height: "90%", width: "90%", margin: "auto", marginTop: "30px", padding: "30px", textAlign: "center", borderRadius: "25px"}}>
             <p>Welcome! I’m Lyss, and I’m a tattoo artist currently based out of Ants Tattoo in San Jose, California.</p>
             <br></br>
             <p>Before becoming a tattoo artist, I worked as an archaeologist. I studied Anthropology and Digital Archaeology at Dartmouth, The University of York, and Stanford. I focused the majority of my research in Cambodia, where I used remote sensing to study the hydrological systems of the Ancient Khmer Empire. Archaeology was something I loved doing, but ultimately I decided that I had gotten everything that I wanted from it and it was time to try something new.</p>
