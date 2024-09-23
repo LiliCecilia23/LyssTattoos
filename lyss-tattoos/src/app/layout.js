@@ -29,6 +29,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${noto.variable} ${mansalva.variable}`}>
         <Nav></Nav>
+        {/* <div>
+          <Image src={ Arch }></Image>
+        </div> */}
         {/* <div className="nav">
           <div>
             <Image className="logo" src={ Logo }></Image>
