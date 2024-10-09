@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import "./globals.css";
 import Logo from "../../public/LyssLogo.png";
+import Arch from "../../public/darkarch.png";
 import Nav from "../components/nav.js";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,37 +29,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${noto.variable} ${mansalva.variable}`}>
-        <Nav></Nav>
-        {/* <div>
-          <Image src={ Arch }></Image>
-        </div> */}
-        {/* <div className="nav">
+        <div style={{position: "fixed", top: 0, zIndex: 41}}>
+          <Nav></Nav>
           <div>
-            <Image className="logo" src={ Logo }></Image>
+            <Image src={ Arch }></Image>
           </div>
-          <div   style={{width: "100%"}}>
-            <ul className="navLinks">
-              <li className="navLink">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="navLink">
-                <Link href="/about">About Lyss</Link>
-              </li>
-              <li className="navLink">
-                <Link href="/faq">FAQ</Link>
-              </li>
-              <li className="navLink">
-                <Link href="/contact">Contact</Link>
-              </li>
-              <li className="navLink">
-                <Link href="/booking">Booking</Link>
-              </li>
-              <li className="navLink">
-                <Link href="/flash">Flash</Link>
-              </li>
-            </ul>
-          </div>
-        </div>   */}
+        </div>
         <NextUIProvider>
           <main>{children}</main>
         </NextUIProvider>

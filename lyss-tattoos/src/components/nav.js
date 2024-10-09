@@ -35,9 +35,12 @@ export default function Nav() {
           className="sm:hidden"
         />
         <NavbarBrand>
-            <div>
-                <Image className="logo" src={ Logo }></Image>
-            </div>        
+            <a href="/">
+                <div>
+                    <Image className="logo" src={ Logo }>
+                    </Image>
+                </div>     
+            </a>  
         </NavbarBrand>
       </NavbarContent>
 
@@ -45,12 +48,10 @@ export default function Nav() {
       {menuItems.map((item, index) => (
           <NavbarItem key={`${item.link}-${index}`}>
             <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              className="w-full"
+              color={"primary"}
+              className="w-full pushForward"
               href={item.link}
-              size="lg"
+              size="xl"
             >
               {item.name}
             </Link>
@@ -58,23 +59,18 @@ export default function Nav() {
         ))}
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
+          <Button as={Link} color="danger" href="/booking" variant="flat">
+            Book Here
           </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>
+      <NavbarMenu id="mobileNav" style={{alignItems: "center", justifyContent: "center", marginTop: "-100px", zIndex: 40}}>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item.link}-${index}`}>
             <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              className="w-full"
+              color={"primary"}
+              className="w-full pushForward"
               href={item.link}
               size="lg"
             >

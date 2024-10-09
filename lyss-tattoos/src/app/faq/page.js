@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 style={{marginTop: "-25px"}}>FAQ</h1>
-      <div style={{width: "70%", position: "absolute", top: "200px"}}>
+      <div style={{width: "70%", position: "absolute", top: "320px"}}>
         <Accordion className="greenBg" variant="shadow">
           <AccordionItem key="1" aria-label="Accordion 1" title="What is the typical process for getting a tattoo?">
             The typical process involves consultation, design selection, tattooing, and aftercare. During the consultation, we discuss your ideas and preferences. Once the design is finalized, we proceed with tattooing, which involves outlining, shading, and coloring. Aftercare instructions are provided to ensure proper healing.
