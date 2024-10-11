@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <div style={{position: "fixed", top: 0, zIndex: 41}}>
           <Nav></Nav>
           <div>
-            <Image style={{marginTop: "-5px"}} src={ Arch }></Image>
+            <Image alt="Archway" style={{marginTop: "-5px"}} src={ Arch }></Image>
           </div>
         </div>
         <NextUIProvider><main>{children}</main></NextUIProvider>

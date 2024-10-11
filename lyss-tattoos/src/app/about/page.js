@@ -7,7 +7,7 @@ export default function Page() {
         <h1 style={{marginTop: "-25px"}}>About Me</h1>
         <div id="hero2" className="greenBg" style={{ margin: "auto", marginTop: "30px", padding: "30px", borderRadius: "25px"}}>
             <div style={{paddingLeft: "30px", paddingRight: "30px", paddingBottom: "20px"}}>
-              <Image style={{borderRadius: "25px", height: "500px"}}  width={300} src={ Portrait }></Image>
+              <Image style={{borderRadius: "25px", height: "500px"}}  width={300} src={ Portrait } alt="Lyss Akemi with her cat"></Image>
             </div>
             <div className="bio" style={{width: "75%", marginLeft: "30px"}}>
               <p>Welcome! I’m Lyss, and I’m a tattoo artist currently based out of Ants Tattoo in San Jose, California.</p>

@@ -37,7 +37,7 @@ export default function Nav() {
         <NavbarBrand>
             <a href="/">
                 <div>
-                    <Image className="logo" src={ Logo }>
+                    <Image alt="logo of Lyss Akemi Tattoo" className="logo" src={ Logo }>
                     </Image>
                 </div>     
             </a>  
