@@ -5,7 +5,7 @@ export default function Page() {
     <main className="dark flex min-h-screen flex-col items-center justify-between p-24">
       <h1 style={{marginTop: "-25px"}}>Book with Me</h1>
 
-      <form style={{display: "flex", flexDirection: "row", width: "85%"}} method="POST" action="https://formsubmit.co/d84b7689bb84c8e0752640de728a9d39" encType="multipart/form-data">
+      <form style={{display: "flex", flexDirection: "row", width: "85%"}} method="POST" action="https://formsubmit.co/lyssakemi@gmail.com" encType="multipart/form-data">
         <section>
           <h2 className="mansalva" style={{fontSize: "20pt", color: "#8E936D", marginBottom: "15px", textAlign: "center"}}>About you</h2>
           <Input color={"primary"} classNames={{inputWrapper: 'form', label: 'form', description: 'form'}} label="Email" type="email" name="Email" placeholder="Ex: me@email.com" />
@@ -18,6 +18,10 @@ export default function Page() {
             <Radio value="no">No</Radio>
           </RadioGroup>
           <RadioGroup  style={{marginBottom: "20px"}} name="Is this your first tattoo?" label="Is this your first tattoo?">
+            <Radio value="yes">Yes</Radio>
+            <Radio value="no">No</Radio>
+          </RadioGroup>
+          <RadioGroup  style={{marginBottom: "20px"}} name="Are you 18 years old or over?" label="Are you 18 years old or over?">
             <Radio value="yes">Yes</Radio>
             <Radio value="no">No</Radio>
           </RadioGroup>
@@ -41,6 +45,9 @@ export default function Page() {
           <div id="spacer2" style={{height: "5px"}}></div>
           <Input color={"primary"} classNames={{inputWrapper: 'form', description: 'form'}} label="Any photo reference to help visualize your idea?" type="file" name="References" multiple accept="image/png, image/jpeg" />
           <Textarea color={"primary"} classNames={{inputWrapper: 'form', label: 'form', description: 'form'}} label="Any other information I should know?" name="Other Info" placeholder="Type here..."></Textarea>
+          <Input type="hidden" name="_next" value="https://www.lyssakemi.co/booking" />
+          <Input type="hidden" name="_subject" value="New submission!" />
+
           <Button type="submit">Submit</Button>
         </section>
       </form> 
