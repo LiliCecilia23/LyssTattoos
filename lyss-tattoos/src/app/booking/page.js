@@ -5,7 +5,7 @@ export default function Page() {
     <main className="dark flex min-h-screen flex-col items-center justify-between p-24">
       <h1 style={{marginTop: "-25px"}}>Book with Me</h1>
 
-      <form style={{display: "flex", flexDirection: "row", width: "85%"}} method="POST" action="https://formsubmit.co/d9242a89a1034bb-b1633bf241e80efec" encType="multipart/form-data">
+      <form style={{display: "flex", flexDirection: "row", width: "85%"}} target="_blank" method="POST" action="https://formsubmit.co/d9242a89a1034bbb1633bf241e80efec" encType="multipart/form-data">
         <section>
           <h2 className="mansalva" style={{fontSize: "20pt", color: "#8E936D", marginBottom: "15px", textAlign: "center"}}>About you</h2>
           <Input color={"primary"} classNames={{inputWrapper: 'form', label: 'form', description: 'form'}} label="Email" type="email" name="Email" placeholder="Ex: me@email.com" />

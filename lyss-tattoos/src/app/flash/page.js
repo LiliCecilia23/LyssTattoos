@@ -19,7 +19,7 @@ export default function Page() {
             <img
               className="w-full max-w-full rounded-lg object-cover object-center"
               src={imageLink}
-              alt="flash-photo"
+              alt="flash tattoo designs in floral, fineline, illustrative style"
             />
           </div>
         ))}
