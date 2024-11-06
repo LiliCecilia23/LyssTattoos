@@ -49,7 +49,7 @@ body {
 }
 
 .instagram-user-root-container {
-  display: none;
+  display: none !important;
 }
 
 .sk-ww-ig-feed-container {
