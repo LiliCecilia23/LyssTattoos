@@ -29,6 +29,11 @@ body {
   }
 }
 
+.ep-iFrameContainer {
+  margin-top: 25px;
+  width: 70vw;
+}
+
 .pushForward {position: relative;}
 .pushForward:before {
     content: ''; 
@@ -247,5 +252,10 @@ main {
     margin: auto;
     margin-bottom: 15px;
     margin-top: 15px;
+  }
+
+  .ep-iFrameContainer {
+    margin-top: 15px;
+    width: 100vw !important;
   }
 }

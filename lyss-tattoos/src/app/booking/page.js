@@ -5,7 +5,26 @@ export default function Page() {
     <main className="dark flex min-h-screen flex-col items-center justify-between p-24">
       <h1 style={{marginTop: "-25px"}}>Book with Me</h1>
 
-      <form style={{display: "flex", flexDirection: "row", width: "85%"}} target="_blank" method="POST" action="https://formsubmit.co/d9242a89a1034bbb1633bf241e80efec" encType="multipart/form-data">
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/9q4tIfvKFvZSLx1He7lD"
+        style={{width: "100%", height: "100%", border: "none", borderRadius: "4px"}}
+        id="inline-9q4tIfvKFvZSLx1He7lD" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Main Booking Form"
+        data-height="1741"
+        data-layout-iframe-id="inline-9q4tIfvKFvZSLx1He7lD"
+        data-form-id="9q4tIfvKFvZSLx1He7lD"
+        title="Main Booking Form"
+            >
+      </iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+      {/* <form style={{display: "flex", flexDirection: "row", width: "85%"}} target="_blank" method="POST" action="https://formsubmit.co/d9242a89a1034bbb1633bf241e80efec" encType="multipart/form-data">
         <section>
           <h2 className="mansalva" style={{fontSize: "20pt", color: "#8E936D", marginBottom: "15px", textAlign: "center"}}>About you</h2>
           <Input color={"primary"} classNames={{inputWrapper: 'form', label: 'form', description: 'form'}} label="Email" type="email" name="Email" placeholder="Ex: me@email.com" />
@@ -50,7 +69,7 @@ export default function Page() {
 
           <Button type="submit">Submit</Button>
         </section>
-      </form> 
+      </form>  */}
     </main>
   );
 }
